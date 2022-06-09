@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>सुखपुरा इंटर कॉलेज Ballia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="सुखपुरा इंटर कॉलेज Ballia" name="keywords" />
+    <meta content="सुखपुरा इंटर कॉलेज Ballia" name="description" />
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+
+  <body>
+
+    <div class="bg-slate-900 h-full border-[1rem] flex justify-center flex-col items-center rounded-lg p-5 border-white ">
+      <!-- admission section -->
+      <div class="admission mb-3 w-full flex justify-start flex-col items-start">
+
+        <div class="text-white w-full border-b-[0.02rem] pb-1 pl-2 pr-2 border-white rounded-lg admission-heading">
+          <h1 class="text-white" >Admission Details</h1>
+        </div>
+
+        <div class="w-2/3 input-studentcourse pl-3 mt-3 flex justify-between items-start flex-col md:flex-row">
+          <div class="session mb-4  w-[46%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Session</p>
+              <input type="text" id="datesession mb-4 " name="date-session mb-4 " value="2022-2023" class="pl-3 w-full bg-gray-200 text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" disabled>
+          </div>
+          <div class="classAdmission w-1/2 flex justify-start items-start flex-col">
+              <p class="text-left text-white">Class</p>
+              <select class="pl-3  bg-white text-black pt-2 pb-2 w-full rounded-lg focus:outline-none active:outline-none" id="class" name="class">
+                <option value="0">--Class--</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Course -->
+      <div class="student-course mb-3 w-full flex justify-start flex-col items-start">
+
+        <div class="text-white w-full border-b-[0.02rem] pb-1 pl-2 pr-2 border-white rounded-lg admission-heading">
+          <h1 class="text-white" >Student Details</h1>
+        </div>
+
+        <div class="w-full input-studentcourse pl-3 mt-3 flex justify-between flex-wrap items-start flex-col md:flex-row">
+          <!-- full name -->
+          <div class="session mb-4  w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Student Name</p>
+              <input type="text" id="fullName" name="date-session mb-4 " class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" placeholder="Full Name" >
+          </div>
+          <!-- phone number -->
+          <div class="session mb-4  w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Mobile Number</p>
+              <input type="number" id="mobileNUmber" name="date-session mb-4 " value="2022-2023" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" placeholder="Mobile Number" >
+          </div>
+          <!-- email -->
+          <div class="session mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Email</p>
+              <input type="email" id="email" name="date-session mb-4 " placeholder="Email Id" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+          <!-- gender -->
+          <div class="session mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Gender</p>
+              <select class="pl-3  bg-white text-black pt-2 pb-2 w-full rounded-lg focus:outline-none active:outline-none" id="gender" name="gender">
+                <option value="0">--Gender--</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="O">Other</option>
+              </select>
+          </div>
+
+          <!-- Category -->
+          <div class="category mb-4 w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Category</p>
+              <select class="pl-3  bg-white text-black pt-2 pb-2 w-full rounded-lg focus:outline-none active:outline-none" id="category" name="gender">
+                <option value="0">--Category--</option>
+                <option value="GENERAL">General</option>
+                <option value="SC">Scheduled Caste (SC)</option>
+                <option value="ST">Scheduled Tribe (ST)</option>
+                <option value="OBC">Other Backward Classes (OBC)</option>
+                <option value="MINORITES">MINORITIES</option>
+              </select>
+          </div>
+
+          <!-- date of birth -->
+          <div class="dob mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Date Of birth</p>
+              <input type="date" id="dob" name="date-session mb-4 " placeholder="Date Of Birth" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+
+          <!-- Mother Tongue -->
+          <div class="mother-tongue mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Mother Tongue</p>
+              <select class="pl-3  bg-white text-black pt-2 pb-2 w-full rounded-lg focus:outline-none active:outline-none" id="motherTongue" name="motherTongue">
+                <option value="0">--Language--</option>
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+              <option value="Assamese">Assamese</option>
+              <option value="Bengali">Bengali</option>
+              <option value="Gujrati">Gujrati</option>
+              <option value="Kannada">Kannada</option>
+              <option value="Kashmiri">Kashmiri</option>
+              <option value="Konkani">Konkani</option>
+              <option value="Malayalam">Malayalam</option>
+              <option value="Manipuri">Manipuri</option>
+              <option value="Marathi">Marathi</option>
+              <option value="Nepali">Nepali</option>
+              <option value="Oriya">Oriya</option>
+              <option value="Punjabi">Punjabi</option>
+              <option value="Sanskrit">Sanskrit</option>
+              <option value="Sindhi">Sindhi</option>
+              <option value="Tamil">Tamil</option>
+              <option value="Urdu">Urdu</option>
+              <option value="Bodo">Bodo</option>
+              <option value="Santhali">Santhali</option>
+              <option value="Maithili">Maithili</option>
+              <option value="Dogri">Dogri</option>
+                </select>
+          </div>
+
+          <!-- Birthplace -->
+          <div class="birhtplace mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Birhtplace</p>
+              <input type="text" id="birhtplace" name="date-session mb-4 " placeholder="Birth Place" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+
+          <!-- Blood Group -->
+          <div class="mother-tongue mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Blood Group</p>
+              <select class="pl-3  bg-white text-black pt-2 pb-2 w-full rounded-lg focus:outline-none active:outline-none" id="bloodGroup" name="bloodGroup">
+                <option value="0">--Blood Group--</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+              <option value="unknown">Unknown</option>
+
+                </select>
+          </div>
+
+          <!-- religion -->
+          <div class="mother-tongue mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Religion</p>
+              <select class="pl-3  bg-white text-black pt-2 pb-2 w-full rounded-lg focus:outline-none active:outline-none" id="religion" name="religion">
+                <option value="0">--Religion--</option>
+                <option selected="selected" value="0">Hinduism</option>
+          <option value="Islam">Islam</option>
+          <option value="Christianity">Christianity</option>
+          <option value="Sikhism">Sikhism</option>
+          <option value="Buddhism">Buddhism</option>
+          <option value="Jainism">Jainism</option>
+          <option value="Zoroastrianism">Zoroastrianism</option>
+          <option value="Other">Other</option>
+
+                </select>
+          </div>
+
+          <!-- Aadhar Number -->
+          <div class="aadharNumber mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Aadhar Number</p>
+              <input type="number" id="aadharNumber" name="date-session mb-4 " placeholder="XXXX XXXX XXXX" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+
+          <!-- Permanent Address -->
+          <div class="address-line-1 mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Address Line 1</p>
+              <input type="text" id="addressLine1" name="date-session mb-4 " placeholder="Address Line 1" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+
+          <div class="address-line-2 mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Address Line 2</p>
+              <input type="text" id="addressLine2" name="date-session mb-4 " placeholder="Address Line 2" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+
+          <div class="city mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">City</p>
+              <input type="text" id="city" name="date-session mb-4 " placeholder="City" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+          <div class="state mb-4   w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">State</p>
+              <input type="text" id="state" name="date-session mb-4 " placeholder="State" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+
+          <div class="pincode mb-4  w-[32%] flex justify-start items-start flex-col">
+              <p class="text-left text-white">Pincode</p>
+              <input type="number" id="pincode" name="date-session mb-4 " placeholder="Pincode" class="pl-3 w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+          </div>
+
+
+        </div>
+      </div>
+
+      <button onclick="submitDetails()" id="submitButton" class="btn w-1/2 bg-yellow-500 p-2 rounded border-0 font-bold" name="button">Submit</button>
+
+
+
+
+    </div>
+
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-secondary text-white mt-2 pt-5 px-sm-3 px-md-5"
+    >
+      <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <a href="../index.html" class="navbar-brand">
+            <h1 class="m-0 mt-n2 text-white font-bold">
+              सुखपुरा इंटर कॉलेज
+            </h1>
+          </a>
+          <div class="d-flex justify-content-start mt-4">
+            <!-- twitter -->
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- facebook -->
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <!-- linkedin -->
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- instagram -->
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="font-weight-bold text-primary mb-4">Quick Links</h5>
+          <div class="d-flex flex-column justify-content-start">
+            <a class="text-white mb-2" href="https://upmsp.edu.in/"
+              ><i class="fa fa-angle-right text-primary mr-2"></i>UPMSP Website</a
+            >
+            <a class="text-white mb-2" href="https://results.upmsp.edu.in/ResultHighSchool.aspx"
+              ><i class="fa fa-angle-right text-primary mr-2"></i>UP Board Results Official Website</a
+            >
+            <a class="text-white mb-2" href="https://ballia.nic.in/"
+              ><i class="fa fa-angle-right text-primary mr-2"></i>District Website Ballia</a
+            >
+            <a class="text-white mb-2" href="http://www.scholarship.up.gov.in/"
+              ><i class="fa fa-angle-right text-primary mr-2"></i>UP Schloarship</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="font-weight-bold text-primary mb-4">Popular Links</h5>
+          <div class="d-flex flex-column justify-content-start">
+            <a class="text-white mb-2" href="/"
+              ><i class="fab fa-facebook text-primary mr-2"></i>Home</a
+            >
+            <a class="text-white mb-2" href="../about.html"
+              ><i class="fab fa-twitter text-primary mr-2"></i>About Us</a
+            >
+            <a class="text-white mb-2" href="../contact.html"
+              ><i class="fab fa-instagram text-primary mr-2"></i>Contact</a
+            >
+            <a class="text-white mb-2" href="../admission/guidlines.html"
+              ><i class="fab fa-whatsapp text-primary mr-2"></i>Guidlines</a
+            >
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="font-weight-bold text-primary mb-4">Get In Touch</h5>
+
+          <a
+            href="https://www.google.com/maps/place/Sukhpura+Inter+College/@25.8486118,84.0904699,17z/data=!4m12!1m6!3m5!1s0x399268a2ee78c5e3:0x79105c2196d5de16!2sSukhpura+Inter+College!8m2!3d25.8486118!4d84.0926586!3m4!1s0x399268a2ee78c5e3:0x79105c2196d5de16!8m2!3d25.8486118!4d84.0926586"
+          >
+            <i class="fa fa-map-marker-alt text-primary mr-3"></i>Sukhpura,
+            Ballia, Uttar Pradesh
+          </a>
+          <br />
+          <a href="tel:+919415682784"
+            ><i class="fa fa-phone-alt text-primary mr-2"></i>+919415682784</a
+          ><br />
+          <a href="mailto:sukhpuraintercollegesic@gmail.com">
+            <i class="fa fa-envelope text-primary mr-2"></i
+            >sukhpuraintercollegesic@gmail.com </a
+          ><br />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+
+
+
+    </div>
+
+    <!-- Script tag -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+       <!-- TODO: Add SDKs for Firebase products that you want to use
+                     https://firebase.google.com/docs/web/setup#available-libraries -->
+       <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+       <script src="../js/firebase.js">
+       </script>
+
+    <script src="../js/online.js">
+    </script>
+
+    <script type="text/javascript">
+        let date_current = new Date();
+        let year_current=  date_current.getFullYear()
+        document.getElementById("datesession mb-4 ").value = `${year_current}-${year_current+1}`;
+    </script>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

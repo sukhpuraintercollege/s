@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Login </title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+      }
+
+      body{
+        width:100vw;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+    </style>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+
+  <body class="bg-slate-800">
+      <div class="p-5 rounded-lg cet-col border-2 border-white">
+        <div class="emailadmin mb-4 w-full flex justify-start items-start flex-col">
+            <h1 class="text-left text-white mb-3">Email Address</h1>
+            <input type="email" id="adminEmail" name="date-session mb-4 " placeholder="Email Address" class="w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+        </div>
+        <div class="passwordAdmin mb-4 w-full flex justify-start items-start flex-col">
+            <h1 class="text-left text-white mb-3">Email Address</h1>
+            <input type="password" id="adminPass" name="date-session mb-4 " placeholder="Password" class="w-full bg-white text-black pt-2 pb-2 rounded-lg focus:outline-none active:outline-none" >
+        </div>
+        <button onclick="adminLogin(this)" class="btn bg-yellow-500 w-full rounded-lg text-black p-3 pl-5 pr-5" name="button">Login</button>
+      </div>
+
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+         <!-- TODO: Add SDKs for Firebase products that you want to use
+                       https://firebase.google.com/docs/web/setup#available-libraries -->
+         <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+         <script src="./js/firebase.js">
+         </script>
+
+      <script src="./js/login.js">
+
+      </script>
+  </body>
+
+
+</html>

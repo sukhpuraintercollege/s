@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Login </title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+      }
+
+      body{
+        width:100vw;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+    </style>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+<body class="bg-slate-900">
+  <div class="container-fluid cet-col">
+    <div class="cet w-full">
+      <a href="./index.html" class="navbar-brand">
+        <h2 class="m-0 text-white font-bold">सुखपुरा इंटर कॉलेज</h2>
+      </a>
+    </div>
+    <div class="cotainer-fluid cet  w-full p-5">
+      <div class="wrapper rounded-lg p-5 cet flex-col border-[0.02rem] border-white">
+        <input type="email" id="adminEmail" placeholder="Admin Email.." class="mb-3 rounded-lg" name="">
+        <input type="password" id="adminPass" placeholder="Admin Password" name="" class="mb-3 rounded-lg">
+        <button onclick="submitAdminDetails()" type="button" name="button" class="focus:outline-none active:outline-none w-auto pl-5 pr-5 pt-2 pb-2  cet rounded-lg bg-yellow-500 text-black font-bold text-lg">Submit</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+                   https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+     <script src="./js/firebase.js">
+     </script>
+<script src="./js/admin.js">
+</script>
+</body>
+  </html>
